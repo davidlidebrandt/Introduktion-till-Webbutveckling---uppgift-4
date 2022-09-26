@@ -56,11 +56,12 @@ img {
     margin-left: 20px;
     cursor: pointer !important;
     float: right;
+    vertical-align: bottom;
 }
 
 p {
     background-color: rgb(209, 239, 181);
-    font-weight: 600;
+    font-weight: 700 !important;
     padding: 10px;
     border-radius: 5px;
 }
