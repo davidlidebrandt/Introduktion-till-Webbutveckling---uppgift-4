@@ -1,5 +1,52 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+input {
+    margin-top: 1rem;
+    border: 2px solid rgb(201, 228, 202);
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+ul {
+    margin: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: larger;
+}
+
+li {
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+button {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    background-color: rgb(201, 228, 202);
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: large;
+}
+
 .finishedToDo {
-    color: bisque;
+    color: rgb(197, 237, 172);
     text-decoration: line-through;
 }
 
@@ -7,4 +54,13 @@ img {
     height: 20px;
     width: 20px;
     margin-left: 20px;
+    cursor: pointer !important;
+    float: right;
+}
+
+p {
+    background-color: rgb(209, 239, 181);
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
 }
