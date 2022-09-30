@@ -24,7 +24,6 @@ function toDoListener() {
     toDoItem.append(hiddenToDoId);
     toDoList.append(toDoItem);
     addToDoInput.value = "";
-    console.log(toDoItems)
 
     trashCan.addEventListener("click", (event) => {
       let toDoId = parseInt(trashCan.nextSibling.textContent);
@@ -39,7 +38,6 @@ function toDoListener() {
       numberOfFinishedToDos.textContent =
         currentlyFinishedItems >= 0 ? currentlyFinishedItems : 0;
       event.stopPropagation();
-      console.log(toDoItems)
     });
 
     toDoItem.addEventListener("click", () => {
@@ -60,10 +58,8 @@ function toDoListener() {
         });
         toDoItem.classList.add("finishedToDo");
         currentlyFinishedItems++;
-        console.log(currentlyFinishedItems);
       }
       numberOfFinishedToDos.textContent = currentlyFinishedItems;
-      console.log(toDoItems)
     });
   }
 }
