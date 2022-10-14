@@ -1,6 +1,6 @@
 body {
     font-family: 'Nunito', sans-serif;
-    background-color: rgb(245, 245, 245);
+    background-image: linear-gradient(to right, rgb(201, 228, 202), rgb(197, 237, 172));
 }
 
 main {
@@ -8,28 +8,52 @@ main {
     place-items: center;
 }
 
+h1 {
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
 input {
     margin-top: 1rem;
+    margin-bottom: 0.75rem;
     border: 2px solid rgb(201, 228, 202);
     border-radius: 5px;
-    padding: 5px;
+    padding: 1rem 1rem;
     font-weight: 600;
+    width: 100%;
+    display: block;
 }
 
 ul {
-    margin: 20px;
+    display: block;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 5px;
     font-weight: 600;
     font-size: larger;
+    padding-left: 0;
 }
 
 li {
     margin-bottom: 10px;
     cursor: pointer;
-
+    list-style-position: inside;
+    list-style: circle;
+    padding: 1rem 2rem;
+    display: block;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: opacity 1000ms;
+    opacity: 0;
 }
 
 button {
@@ -43,11 +67,8 @@ button {
     border-radius: 10px;
     cursor: pointer;
     font-size: large;
-}
-
-.finishedToDo {
-    color: rgb(197, 237, 172);
-    text-decoration: line-through;
+    display: block;
+    width: 100%;
 }
 
 img {
@@ -64,4 +85,18 @@ p {
     font-weight: 700 !important;
     padding: 10px;
     border-radius: 5px;
+}
+
+.finishedToDo {
+    color: rgb(197, 237, 172);
+    text-decoration: line-through;
+}
+
+.plus-icon {
+    margin: 0.5rem;
+}
+
+.fadeIn {
+    transition: all 1000ms;
+    opacity: 100;
 }

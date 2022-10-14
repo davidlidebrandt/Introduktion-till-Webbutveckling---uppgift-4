@@ -24,14 +24,17 @@ function toDoListener() {
     toDoItem.append(hiddenToDoId);
     toDoList.append(toDoItem);
     addToDoInput.value = "";
+    setTimeout(()=> {
+      toDoItem.classList.add("fadeIn")
+    }, 200)
 
     trashCan.addEventListener("click", (event) => {
       let toDoId = parseInt(trashCan.nextSibling.textContent);
       toDoItems = toDoItems.filter((toDo) => {
         return toDo["id"] !== toDoId
       });
-      trashCan.remove();
-      toDoItem.remove();
+        trashCan.remove();
+        toDoItem.remove();
       if (toDoItem.classList.contains("finishedToDo")) {
         currentlyFinishedItems--;
       }
