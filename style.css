@@ -31,6 +31,27 @@ input {
     font-weight: 600;
     width: 100%;
     display: block;
+    font-size: large;
+    transition: all 1000ms;
+}
+
+input:focus-visible {
+    outline: none;
+    transition: all 1000ms;
+    background-image: linear-gradient(to right, rgb(201, 228, 202), rgb(197, 237, 172));
+    animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse{
+    0% {
+        opacity: 0.7;
+    }
+    50% { 
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 ul {
@@ -54,6 +75,11 @@ li {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: opacity 1000ms;
     opacity: 0;
+    border: 1px solid rgb(245, 245, 245);
+}
+
+li:hover {
+    border: 1px solid rgb(201, 228, 202);
 }
 
 button {
@@ -69,6 +95,12 @@ button {
     font-size: large;
     display: block;
     width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    transition: background-color 700ms;
+}
+
+button:hover {
+    background-color: rgb(209, 239, 181);
 }
 
 img {
